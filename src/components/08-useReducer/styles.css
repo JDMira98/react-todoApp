@@ -10,12 +10,40 @@ p{
 }
 
 .list-group-item {
-align-items: center;
-display: flex;
-justify-content: space-between;
-
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+    box-decoration-break: clone;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    margin-bottom: 10px;
+    /* Espacio entre elementos de la lista */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Efectos suaves para interacciones */
+    cursor: pointer;
+    /* Indica que el elemento es interactivo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera para resaltar el elemento */
+    font-size: 16px;
+    /* Tamaño de fuente para mejorar la legibilidad */
+    color: #343a40;
+    /* Color del texto */
 }
-
 .complete {
     text-decoration: line-through;
+    background-color: rgba(128, 128, 128, 0.062);
+    color: #6c757d;
+    /* Cambia el color del texto a un gris más claro */
+    opacity: 0.7;
+    /* Reduce la opacidad para dar un aspecto de "completado" */
+    font-style: italic;
+    /* Cambia el estilo de la fuente a cursiva para diferenciarla */
+    transition: opacity 0.3s ease;
+    /* Suaviza el cambio de opacidad */
+}
+
+.title{
+    
 }
